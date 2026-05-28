@@ -6,7 +6,7 @@ A wireless, modular handwired mechanical keyboard with a laser-cut bent-acrylic 
 
 ## Hardware
 
-The body is a single sheet of acrylic, cut on a laser cutter and heat-bent into the keyboard's compound angle. The switch matrix is handwired with 16 AWG enamelled copper magnet wire — heavy enough that the matrix lines double as structural support behind the plate. Magnetic-pogo connectors latch the numpad, trackpad, and battery modules to the main board, so they hot-swap without re-pairing the host.
+The body is a single sheet of acrylic, cut on a laser cutter and heat-bent into the keyboard's compound angle. The switch matrix is handwired with 16 AWG enameled copper magnet wire — heavy enough that the matrix lines double as structural support behind the plate. Magnetic-pogo connectors latch the numpad, trackpad, and battery modules to the main board, so they hot-swap without re-pairing the host.
 
 Rotary encoders share columns with regular switches by exploiting matrix scan timing: an encoder's two phases are wired to adjacent rows of the same column, and the firmware reads phase transitions inside the normal scan cycle. The result is full encoder support without burning extra GPIO. Guitar-style detented knobs supply the tactile resolution.
 
@@ -21,7 +21,7 @@ The trackpad is a custom dual-axis resistive panel, read through the MCU's ADC a
 
 ## Software
 
-Firmware is built on **QMK**, customised for the encoder-in-matrix scan and the resistive-trackpad analog frontend. The host sees a single composite HID device regardless of which modules are attached.
+Firmware is built on **QMK**, customized for the encoder-in-matrix scan and the resistive-trackpad analog frontend. The host sees a single composite HID device regardless of which modules are attached.
 
 ## Files
 
